@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <title>RK</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+    <meta name="author" content="Codedthemes" />
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'pages/waves/css/waves.min.css' %}" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'pages/waves/css/waves.min.css' %}" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="{% static 'icon/themify-icons/themify-icons.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome-n.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.mCustomScrollbar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="theme-loader">
+        <div class="loader-track">
+            <div class="preloader-wrapper">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-left">
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="header-notification">
+                                <a href="#!" class="waves-effect waves-light">
+                                    <i class="ti-bell"></i>
+                                    <span class="badge bg-c-red"></span>
+                                </a>
+                                <ul class="show-notification">
+                                    <li>
+                                        <h6>Notifications</h6>
+                                        <label class="label label-danger">New</label>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <div class="media">
+                                            <img class="d-flex align-self-center img-radius" src="{% static 'images/avatar-2.jpg' %}" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">John Doe</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <div class="media">
+                                            <img class="d-flex align-self-center img-radius" src="{% static 'images/avatar-4.jpg' %}" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Joseph William</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <div class="media">
+                                            <img class="d-flex align-self-center img-radius" src="{% static 'images/avatar-3.jpg' %}" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Sara Soudein</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    <div class="pcoded-content1">
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <div class="page-body">
+                                        <div class="row">
+                                            <div class="col-xl-4 col-md-12">
+                                                <div class="card mat-stat-card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-center b-b-default">
+                                                            <div class="col-sm-6 b-r-default p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="24" height="24"><rect width="100%" height="100%" fill="#4CAF50"/><text x="50%" y="50%" fill="white" font-size="48" font-family="Arial" dy=".35em" text-anchor="middle">RK</text></svg>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <p class="text-muted m-b-0">RK Bank</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="24" height="24"><rect width="100%" height="100%" fill="#B53F50"/><text x="50%" y="50%" fill="white" font-size="48" font-family="Arial" dy=".35em" text-anchor="middle">SR</text></svg>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>{{SR_bank}}</h5>
+                                                                        <p class="text-muted m-b-0">SR Bank</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+														<div class="row align-items-center b-b-default">
+                                                            <div class="col-sm-6 b-r-default p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="24" height="24"><rect width="100%" height="100%" fill="#324FFE"/><text x="50%" y="50%" fill="white" font-size="48" font-family="Arial" dy=".35em" text-anchor="middle">VK</text></svg>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>{{VK_bank}}</h5>
+                                                                        <p class="text-muted m-b-0">VK Bank</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="24" height="24"><rect width="100%" height="100%" fill="#999DDE"/><text x="50%" y="50%" fill="white" font-size="48" font-family="Arial" dy=".35em" text-anchor="middle">PD</text></svg>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>{{PD_bank}}</h5>
+                                                                        <p class="text-muted m-b-0">PD Bank</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col-sm-6 p-b-20 p-t-20 b-r-default">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="far fa-file-alt text-c-red f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>{{SAV_bank}}</h5>
+                                                                        <p class="text-muted m-b-0">Saving's</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="far fa-envelope-open text-c-blue f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>{{FD_bank}}</h5>
+                                                                        <p class="text-muted m-b-0">FD's</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-12">
+                                                <div class="card mat-stat-card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-center b-b-default">
+                                                            <div class="col-sm-6 b-r-default p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24" height="24" class="text-c-red"><rect width="100%" height="100%" fill="red"/><text x="50%" y="50%" fill="white" font-size="24" font-family="Arial" dy=".3em" text-anchor="middle">Zero</text></svg></svg>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>{{stx_z}}</h5>
+                                                                        <p class="text-muted m-b-0">Zerodha Funds</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24" height="24" class="text-c-red"><rect width="100%" height="100%" fill="red"/><text x="50%" y="50%" fill="white" font-size="24" font-family="Arial" dy=".3em" text-anchor="middle">Zero</text></svg></svg>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>{{hold_z}}</h5>
+                                                                        <p class="text-muted m-b-0">Zero Holdings</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+														<div class="row align-items-center b-b-default">
+                                                            <div class="col-sm-6 b-r-default p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24" height="24" class="text-c-blue"><rect width="100%" height="100%" fill="#004dd2"/><text x="50%" y="50%" fill="white" font-size="24" font-family="Arial" dy=".3em" text-anchor="middle">UPX</text></svg></svg>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>{{stx_z}}</h5>
+                                                                        <p class="text-muted m-b-0">UPstox Funds</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24" height="24" class="text-c-blue"><rect width="100%" height="100%" fill="#004dd2"/><text x="50%" y="50%" fill="white" font-size="24" font-family="Arial" dy=".3em" text-anchor="middle">UPX</text></svg></svg>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>{{hold_upx}}</h5>
+                                                                        <p class="text-muted m-b-0">UPstox Holding</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col-sm-6 p-b-20 p-t-20 b-r-default">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24" height="24" class="text-c-blue"><rect width="100%" height="100%" fill="#00baf2"/><text x="50%" y="50%" fill="white" font-size="24" font-family="Arial" dy=".3em" text-anchor="middle">Paytm</text></svg></svg>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>{{stx_ptm}}</h5>
+                                                                        <p class="text-muted m-b-0">Paytm Funds</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24" height="24" class="text-c-blue"><rect width="100%" height="100%" fill="#00baf2"/><text x="50%" y="50%" fill="white" font-size="24" font-family="Arial" dy=".3em" text-anchor="middle">Paytm</text></svg></svg>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>{{hold_ptm}}</h5>
+                                                                        <p class="text-muted m-b-0">Paytm Holdings</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-12">
+                                                <div class="card mat-clr-stat-card text-white green ">
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-3 text-center bg-c-green">
+                                                                <i class="fas fa-university mat-icon f-24"></i>
+                                                            </div>
+                                                            <div class="col-9 cst-cont">
+                                                                <h5>{{Total_bank_asset}} Lakh</h5>
+                                                                <p class="m-b-0">All Bank Accounts as of {{Total_bank_asset_date|date}}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card mat-clr-stat-card text-white blue">
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-3 text-center bg-c-blue">
+                                                                <i class="fas fa-briefcase mat-icon f-24"></i>
+                                                            </div>
+                                                            <div class="col-9 cst-cont">
+                                                                <h5>{{Total_mf_asset_return}} Lakh</h5>
+                                                                <p class="m-b-0">MF Balance On investment {{Total_mf_asset}}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+												<div class="card mat-clr-stat-card text-white blue">
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-3 text-center bg-c-blue">
+                                                                <i class="fas fa-chart-line mat-icon f-24"></i>
+                                                            </div>
+                                                            <div class="col-9 cst-cont">
+                                                                <h5>{{Total_stock_asset}} Lakh</h5>
+                                                                <p class="m-b-0">Overall Stock Balance as of {{Total_stock_asset_date|date}}</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-md-12">
+                                                <div class="card table-card">
+                                                    <div class="card-header">
+                                                        <h5>MF performance</h5>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                                                <li><i class="fa fa-trash close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover m-b-0 without-header">
+                                                                <tbody>
+																	{% for mf in transaction %}
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="d-inline-block align-middle">
+                                                                                <i class="fas fa-university mat-icon f-24" class="img-radius img-40 align-top m-r-15"></i>
+                                                                                <div class="d-inline-block">
+                                                                                    <h6>{{mf.fund}}</h6>
+                                                                                    <p class="text-muted m-b-0">{{mf.investment_date}}</p>
+																					<p class="text-muted m-b-0">{{mf.investment_type}}</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">
+                                                                            <h6 class="f-w-700">Amount: {{mf.investment_amount}}</h6>
+																			<h6 class="f-w-700">NAV : {{mf.NAV}}</h6>
+																			<h6 class="f-w-700">Units: {{mf.units_purchased}} </h6>
+                                                                        </td>
+                                                                    </tr>
+																	{% endfor %}
+                                                                </tbody>
+                                                            </table>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="card text-center order-visitor-card">
+                                                            <div class="card-block">
+                                                                <h6 class="m-b-0">Last Month</h6>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i>{{LM}}</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card text-center order-visitor-card">
+                                                            <div class="card-block">
+                                                                <h6 class="m-b-0">Now</h6>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-up m-r-15 text-c-green"></i>{{CM}}</h4>
+                                                                <p class="m-b-0">{{Growth_monthly}}% From Last 1 Months</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                            <div class="card-header">
+                                                <h5>MF Details</h5>
+                                                <span>Complete MF list of Invemtments in Total. </span>
+                                                <div class="card-header-right">
+                                                    <ul class="list-unstyled card-option">
+                                                        <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                                        <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                        <li><i class="fa fa-minus minimize-card"></i></li>
+                                                        <li><i class="fa fa-refresh reload-card"></i></li>
+                                                        <li><i class="fa fa-trash close-card"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card-block table-border-style">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+																<th>APP</th>
+                                                                <th>PAN User</th>
+                                                                <th>Fund Name</th>
+                                                                <th>Fund Type</th>
+																<th>Units</th>
+																<th>Invested</th>
+																<th>CV</th>
+																<th>CIGR</th>
+																<th>XLRI</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+															{% for mf in mutual_funds %}
+                                                            <tr class="table-active">
+                                                                <th scope="row">{{mf.pk}}</th>
+                                                                <td>{{mf.app}}</td>
+                                                                <td>{{mf.pan_user}}</td>
+																<td>{{mf.fund_name}}</td>
+																<td>{{mf.fund_type}}</td>
+																<td>{{mf.units_purchased}}</td>
+																<td>{{mf.investment_amount}}</td>
+																<td>{{mf.returns}}</td>
+																<td>{{mf.cagr}}</td>
+																<td>{{mf.xirr}}</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+										{% endfor %}
+                                <div id="styleSelector"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'js/jquery/jquery.min.js' %} "></script>
+    <script type="text/javascript" src="{% static 'js/jquery-ui/jquery-ui.min.js' %} "></script>
+    <script type="text/javascript" src="{% static 'js/popper.js/popper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap/js/bootstrap.min.j' %} "></script>
+    <script src="{% static 'pages/waves/js/waves.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-slimscroll/jquery.slimscroll.js' %}"></script>
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %} "></script>
+    <script src="{% static 'js/pcoded.min.js' %}"></script>
+    <script src="{% static 'js/vertical/vertical-layout.min.js' %} "></script>
+    <script type="text/javascript" src="{% static 'js/script.js' %} "></script>
+</body>
+</html>
